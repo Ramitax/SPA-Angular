@@ -1,0 +1,11 @@
+<div class="card h-100">
+  <img src={{heroe.img}} class="card-img-top" alt={{heroe.nombre}}>
+  <div class="card-body">
+    <h5 class="card-title">{{heroe.nombre}} - {{heroe.casa}}</h5>
+    <p class="card-text">{{heroe.bio}}</p>
+  </div>
+  <button type="button" class="btn btn-outline-primary" [routerLink]="['/heroe', heroe.id]">Informacion</button>
+  <div class="card-footer">
+    <small class="text-muted"> Ultima aparicion {{heroe.aparicion}}</small>
+  </div>
+</div>
